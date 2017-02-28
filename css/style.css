@@ -376,9 +376,10 @@ padding-left:30px !important;
   border-top:10px solid #424242;;
 }
 
-.head{
+table.head{
 	background-color: #1a4e95;
 	color: white;
+	height: 60px;
 }
 
 .weekDates{
@@ -483,6 +484,192 @@ nav{
     height:220px !important;
     width:220px !important;
 
+}
+
+/* CLOUD CSS AND ANIMATIONS */
+
+.sky{
+  position:absolute;
+  margin:auto;
+  top:-30px;
+  left:0;
+  right:0;
+  width:200px;
+  height:150px;
+  transform: scale(0.6);
+}
+
+.leftbump,.rightbump,.frontbump,.box,.sun{
+  position:absolute;
+}
+
+
+.leftbump{
+  top:95px;
+  width:50px;
+  height:50px;
+  border:8pt solid white;
+  border-radius:50%;
+  border-right:8pt solid transparent;
+  border-bottom:8pt solid transparent;
+  transform:rotate(-45deg);
+}
+
+.rightbump{
+  top:86px;
+  left:57px;
+  width:60px;
+  height:60px;
+  border:8pt solid white;
+  border-radius:50%;
+  border-left:8pt solid transparent;
+  border-top:8pt solid transparent;
+  transform:rotate(-45deg);
+}
+
+.frontbump{
+  top:65px;
+  left:22px;
+  width:69px;
+  height:71px;
+  border:8pt solid white;
+  border-radius:50%;
+  border-left:8pt solid transparent;
+  border-top:8pt solid transparent;
+  transform:rotate(-143deg);
+}
+
+.sun{
+  top:60px;
+  left:65px;
+  width:60px;
+  height:60px;
+  border:8pt solid white;
+  border-radius:50%;
+  border-left:8pt solid transparent;
+  border-top:8pt solid transparent;
+  transform:rotate(-93deg);
+}
+
+.box{
+  top:65px;
+  left:25px;
+  width:70px;
+  height:80px;
+  border:8pt solid white;
+  border-left:0pt solid transparent;
+  border-right:0pt solid transparent;
+  border-top:8pt solid transparent;
+}
+
+.ray1,.ray2,.ray3,.ray4,.ray5{
+  position:absolute;
+  height:15px;
+  width:0px;
+  border:3pt solid white;
+  border-radius:50px;
+}
+
+.ray1{
+  left:65px;
+  top:45px;
+  transform: rotate(-40deg);
+  animation: flash 1s infinite linear;
+}
+
+.ray2{
+  left:97px;
+  top:38px;
+  transform: rotate(0deg);
+  animation: move3 1s infinite linear;
+}
+
+.ray3{
+  left:125px;
+  top:50px;
+  transform: rotate(44deg);
+  animation: move2 1s infinite linear;
+}
+
+.ray4{
+  left:138px;
+  top:77px;
+  transform: rotate(87deg);
+  animation: movea 1s infinite linear;
+}
+
+.ray5{
+  left:130px;
+  top:105px;
+  transform: rotate(120deg);
+  animation: move 1s infinite linear;
+}
+
+@keyframes move {
+  0% {
+
+  }
+  100% {
+  left:138px;
+  top:77px;
+  transform: rotate(87deg);
+
+  }
+}
+
+@keyframes movea {
+  0% {
+
+  }
+  100% {
+  left:125px;
+  top:50px;
+  transform: rotate(44deg);
+
+  }
+}
+
+@keyframes move2 {
+  0% {
+
+  }
+  100% {
+  left:97px;
+  top:38px;
+  transform: rotate(0deg);
+
+  }
+}
+
+@keyframes move3 {
+  0% {
+
+  }
+  100% {
+  left:65px;
+  top:45px;
+  transform: rotate(-40deg);
+
+  }
+}
+
+@keyframes flash {
+  20% {
+    visibility:hidden;
+  }
+  80%{
+    visibility:hidden;
+  }
+  80%{
+    visibility:block;
+  }
+  100% {
+  left:130px;
+  top:105px;
+  transform: rotate(120deg);
+     visibility:block;
+  
+  }
 }
 
 
