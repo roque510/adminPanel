@@ -258,6 +258,19 @@ padding-left:30px !important;
 	height: 200px;
 }
 
+.collapse{
+	z-index: 9999 !important;
+
+}
+
+.meLi{
+	height: 60px;
+}
+
+.menuLi{
+	height: 58px;
+}
+
 .topbox{
 	height: 70px;
 }
@@ -452,9 +465,6 @@ table.head{
 
 }
 
-nav{
-	height: 60px;
-}
 
 .slice3{
 	position:absolute;
@@ -672,6 +682,27 @@ nav{
   }
 }
 
+.navbar-fixed-top {
+  top: -20px !important; /* you'll have to figure out the exact number here */
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+  position: relative !important; /* this can also be static */
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
 
 
 /* #4fc4f6 LIGHTBLUE, YELLOw #fcb150 RED #e64c65 GREEN #11a8ab*/

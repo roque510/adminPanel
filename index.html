@@ -17,8 +17,17 @@
 
 <body>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top" >
   <div class="container-fluid">
+  	<div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    
+    </div>
 
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -27,12 +36,13 @@
         <li><a href="#"><img src="img/Settings icon.png" class="imgIcon">Settings</a></li>
         <li class="active"><a href="#"><img src="img/User icon.png" class="imgIcon">Account</a></li>
 
-        <li><a href="#"><img src="img/Mail icon.png" class="imgIcon">Messages <span class="badge activeBadge">5</span></a></li>
+
+        <li><a href="#" class="menuLi"><img  src="img/Mail icon.png" class="imgIcon">Messages <span class="badge activeBadge">5</span></a></li>
 
         <li><a href="#"><img src="img/Star icon.png" class="imgIcon">Favorites</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Me <span class="caret"></span></a></li>
+      <li><a class="meLi" href="#">Me <span class="caret"></span></a></li>
       <img src="img/Profile Image.png" alt="" class="img-circle">
 
       </ul>
@@ -124,15 +134,17 @@
 	</div>	
 
 	<div class="panel">
+	<div class="videoWrapper">
 		<iframe id="youtube-video" src="https://www.youtube.com/embed/rrT6v5sOwJg" frameborder="0" allowfullscreen></iframe>
+	</div>
 	</div>
 
 	<div class="panel">
-		<div class="row container-fluid ">
-			<div class="col-xs-3 box light-light-blue "><img class="centerIcons center-block" src="img/Facebook Icon white.png"></div>
-			<div class="col-xs-3 box twittercolor"><img class="centerIcons  center-block" src="img/Twitter Icon.png"></div>
-			<div class="col-xs-3 box light-red"><img class="centerIcons center-block" src="img/gcon.png"></div>
-			<div class="col-xs-3 box bluegrey"><img class="centerIcons center-block" src="img/Mail Icon white.png"></div>
+				<div class="row container-fluid ">
+			<div class="col-xs-3 topbox light-light-blue "><img class="centerIcons center-block" src="img/Facebook Icon white.png"></div>
+			<div class="col-xs-3 topbox twittercolor"><img class="centerIcons  center-block" src="img/Twitter Icon.png"></div>
+			<div class="col-xs-3 topbox light-red"><img class="centerIcons center-block" src="img/gcon.png"></div>
+			<div class="col-xs-3 topbox bluegrey"><img class="centerIcons center-block" src="img/Mail Icon white.png"></div>
 		</div>
 
 		<div class="row container-fluid">
@@ -291,7 +303,7 @@
 		  </div>
 
 		  <div class="form-group"  id="input_container">
-		    <input id="input" type="email" class="form-control sform " placeholder="Password">
+		    <input id="input" type="password" class="form-control sform " placeholder="Password">
 		       <img src="img/Lock Icon.png" id="input_img">
 		  </div>
 
